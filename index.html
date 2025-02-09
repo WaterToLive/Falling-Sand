@@ -20,8 +20,6 @@
 let grid;
 let w = 10;
 let cols, rows;
-let belowR = grid [i + 1][j];
-let belowL = grid [i - 1][j];
 function setup() {
   createCanvas(400, 400);
   cols = width / w;
@@ -68,7 +66,8 @@ function draw() {
       let state = grid[i][j];
       if (state === 1) {
         let below = grid[i][j + 1];
-         
+        let belowR = grid [i + 1][j];
+        let belowL = grid [i - 1][j];
         let dir = 1;
         if (random(1) < 0.5){
            dir *= -1;
