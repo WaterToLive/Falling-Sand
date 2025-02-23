@@ -68,8 +68,9 @@ function draw() {
       if (state === 1) {
         let below = grid[i][j + 1];
         
-        let dir = random([-1,1])
-        }
+        let dir = 1;
+        if (random(1) < 0.5 ) {
+          dir*= -1;        }
         let belowA = grid [i + dir][j + 1];
         let belowB = grid [i - dir][j + 1];
         //let dir = random([-1,1])
