@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><script src = "https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
     <title>Document</title>
 </head>
 <body>
    <script>
-      function make2DArray(cols, rows){
+    function make2DArray(cols, rows){
         let arr = new Array(cols);
         for (let i = 0; i < arr.length; i++){
-         arr[i] = new Array(rows);
-        for (let j = 0; j < arr[i].length; j++)
-            arr[i][j] = 0;
-  }
-  return arr;
-}
+            arr[i] = new Array(rows);
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = 0;
+            }
+        }
+      return arr;
+    }
+       
 let col,row;
 let grid;
 let w = 10;
