@@ -73,11 +73,13 @@ function draw() {
     for (let i = 0; i < cols; i++) {
       for (let j = 0; j < rows; j++){
         noStroke();   
-        if (grid[i][j] == 1) {} 
-         fill(255)
-      let x = i * w;
-      let y = j * w;
-      square(x, y, w);
+        if (grid[i][j] == 1) {
+          fill(255)
+       let x = i * w;
+       let y = j * w;
+       square(x, y, w);
+        } 
+    
     }
   }
   
